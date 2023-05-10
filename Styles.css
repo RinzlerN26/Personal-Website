@@ -94,10 +94,10 @@ hr {
     background-image: linear-gradient(to bottom,  #2A2550,  #2A2550);
     -webkit-border-radius: 8;
     -moz-border-radius: 8;
-    border-radius: 8px;
+    border-radius: 50px;
     font-family: "Montserrat", sans-serif;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 30px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
   }
