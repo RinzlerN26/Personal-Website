@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+
 body {
   color: #40514e;
   margin: 0;
   text-align: center;
-  font-family: "Merriweather", serif;
   font-size: 200%;
+  font-family:'Inter';
 }
 
 .top {
-  background-color: #2A2550;
+  background-color: #050921;;
   position: relative;
   padding-top: 100px;
 }
@@ -26,7 +28,7 @@ h2 {
   padding-bottom: 10px;
 }
 h3 {
-  color: #11999e;
+  color: #050921;;
   font-family: "Montserrat", sans-serif;
 }
 .pro {
