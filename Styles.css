@@ -1,35 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,300;1,700&display=swap');
 
 body {
   color: #40514e;
   margin: 0;
   text-align: center;
   font-size: 200%;
-  font-family:'Inter';
+  font-family:'Poppins',sans-serif;
+  font-weight: 700;
 }
+
+.t{
+ margin-bottom:500px;
+ margin-top:300px;
+}
+.u{
+  margin-bottom:500px;
+}
+
 
 .top {
   background-color: #050921;;
   position: relative;
   padding-top: 100px;
+  height:2200px;
 }
 
 h1 {
   color: #ffffff;
   margin: 50px auto 0 auto;
-  font-family: "Sacramento", cursive;
+  font-family: "Poppins";
   font-size: 5.625rem;
 }
 h2 {
   color: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins";
   font-size: 2.5rem;
   font-weight: normal;
   padding-bottom: 10px;
 }
 h3 {
   color: #050921;;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins";
 }
 .pro {
   text-decoration: underline;
@@ -97,7 +109,7 @@ hr {
     -webkit-border-radius: 8;
     -moz-border-radius: 8;
     border-radius: 50px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Inter";
     color: #ffffff;
     font-size: 30px;
     padding: 10px 20px 10px 20px;
