@@ -20,8 +20,8 @@ This repository contains files for my portfolio showcasing my projects and skill
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* ![HTML](https://img.shields.io/badge/HTML)
-* ![CSS](https://img.shields.io/badge/CSS)
+* ![HTML](https://img.shields.io/badge/HTML-blue)
+* ![CSS](https://img.shields.io/badge/CSS-red)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
