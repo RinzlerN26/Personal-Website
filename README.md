@@ -14,8 +14,8 @@ This repository contains files for my portfolio showcasing my projects and skill
 
 ### Built With
 
-* ![HTML](https://img.shields.io/badge/HTML-blue)
-* ![CSS](https://img.shields.io/badge/CSS-red)
+* ![HTML](https://img.shields.io/badge/HTML-red)
+* ![CSS](https://img.shields.io/badge/CSS-purple)
 
 
 
