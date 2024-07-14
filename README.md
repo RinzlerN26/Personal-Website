@@ -8,14 +8,9 @@
   <h3 align="center">Personal Website Portfolio</h3>
 </div>
 
-
 ## About The Project
 
 This repository contains files for my portfolio showcasing my projects and skills.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
@@ -23,7 +18,6 @@ This repository contains files for my portfolio showcasing my projects and skill
 * ![CSS](https://img.shields.io/badge/CSS-red)
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
