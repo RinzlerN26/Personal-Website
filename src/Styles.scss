@@ -21,10 +21,22 @@ body {
 }
 
 img{
-  @include mq.media(phoneMedium) {
-    width: 50px;
-    height: 50px;
+  @include mq.media(phoneLarge) {
+    width: 50px !important;
+    height: 50px !important;
   }
+  @include mq.media(phoneMedium) {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  @include mq.media(phoneSmall) {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+.greeting-image{
+  width: 300px;
+  height: 300px;
 }
 
 .top {
@@ -32,7 +44,13 @@ img{
   position: relative;
   padding: 20px 0 20px 0;
   height:auto;
+  @include mq.media(phoneLarge) {
+    font-size: 10px;
+  }
   @include mq.media(phoneMedium) {
+    font-size: 10px;
+  }
+  @include mq.media(phoneSmall) {
     font-size: 10px;
   }
 }
@@ -42,7 +60,13 @@ h1 {
   margin: 50px auto 0 auto;
   font-family: "Poppins";
   font-size: 5.625rem;
+  @include mq.media(phoneLarge) {
+    font-size: 10px;
+  }
   @include mq.media(phoneMedium) {
+    font-size: 10px;
+  }
+  @include mq.media(phoneSmall) {
     font-size: 10px;
   }
 }
@@ -52,14 +76,26 @@ h2 {
   font-size: 2.5rem;
   font-weight: normal;
   padding-bottom: 40px;
+  @include mq.media(phoneLarge) {
+    font-size: 10px;
+  }
   @include mq.media(phoneMedium) {
+    font-size: 10px;
+  }
+  @include mq.media(phoneSmall) {
     font-size: 10px;
   }
 }
 h3 {
   color: #050921;;
   font-family: "Poppins";
+  @include mq.media(phoneLarge) {
+    font-size: 10px;
+  }
   @include mq.media(phoneMedium) {
+    font-size: 10px;
+  }
+  @include mq.media(phoneSmall) {
     font-size: 10px;
   }
 } 
@@ -112,7 +148,13 @@ text-align: left;
 
 p {
   line-height: 2;
+  @include mq.media(phoneLarge) {
+    font-size: 10px;
+  }
   @include mq.media(phoneMedium) {
+    font-size: 10px;
+  }
+  @include mq.media(phoneSmall) {
     font-size: 10px;
   }
 }
@@ -121,8 +163,16 @@ hr {
   border: dotted #eaf6f6 25px;
   border-bottom: none;
   width: 200px;
-  margin: 100px auto;
+  margin: 50px auto;
+  @include mq.media(phoneLarge) {
+    border: dotted #eaf6f6 10px;
+    border-bottom: none;
+  }
   @include mq.media(phoneMedium) {
+    border: dotted #eaf6f6 10px;
+    border-bottom: none;
+  }
+  @include mq.media(phoneSmall) {
     border: dotted #eaf6f6 10px;
     border-bottom: none;
   }
@@ -145,8 +195,15 @@ hr {
     font-size: 30px;
     padding: 5px 10px;
     text-decoration: none;
-    @include mq.media(phoneMedium) {
+    margin-inline: 1rem;
+    @include mq.media(phoneLarge) {
       font-size: 10px;
+    }
+    @include mq.media(phoneMedium) {
+      font-size: 6px;
+    }
+    @include mq.media(phoneSmall) {
+      font-size: 6px;
     }
   }
   
@@ -165,6 +222,8 @@ hr {
     background-color: #2A2550;
     padding:50px 0px 20px;
     margin-top: 3rem;
+    bottom: 0;
+    position: relative;
 }
 a{
     color: #fff;
@@ -178,4 +237,13 @@ color: #eaf6f6;
     color: #eaf6f6;
     font-size: 0.75rem;
     padding: 20px 0px;
+    @include mq.media(phoneLarge) {
+      font-size: 10px;
+    }
+    @include mq.media(phoneMedium) {
+      font-size: 10px;
+    }
+    @include mq.media(phoneSmall) {
+      font-size: 10px;
+    }
 }
