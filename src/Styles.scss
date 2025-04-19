@@ -1,14 +1,13 @@
-@use '../styles/media-queries.scss' as mq;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,300;1,700&display=swap');
-
+@use "../styles/media-queries.scss" as mq;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,300;1,700&display=swap");
 
 body {
   color: #40514e;
   margin: 0;
   text-align: center;
   font-size: 200%;
-  font-family:'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 
@@ -21,22 +20,22 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: white
+  background-color: white;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
-.t{
- margin-bottom:50px;
- margin-top:30px;
+.t {
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
-.u{
-  margin-bottom:50px;
+.u {
+  margin-bottom: 50px;
 }
 
-img{
+img {
   @include mq.media(phoneLarge) {
     width: 50px !important;
     height: 50px !important;
@@ -50,7 +49,7 @@ img{
     height: 50px !important;
   }
 }
-.greeting-image{
+.greeting-image {
   width: 300px;
   height: 300px;
 }
@@ -59,7 +58,7 @@ img{
   background-color: #050921;
   position: relative;
   padding: 20px 0 20px 0;
-  height:auto;
+  height: auto;
   @include mq.media(phoneLarge) {
     font-size: 10px;
   }
@@ -103,7 +102,7 @@ h2 {
   }
 }
 h3 {
-  color: #050921;;
+  color: #050921;
   font-family: "Poppins";
   @include mq.media(phoneLarge) {
     font-size: 10px;
@@ -114,16 +113,15 @@ h3 {
   @include mq.media(phoneSmall) {
     font-size: 10px;
   }
-} 
-.project-heading{
-text-align: left;
-&.full-stack-heading{
-  text-align: right;
 }
+.project-heading {
+  text-align: left;
+  &.full-stack-heading {
+    text-align: right;
+  }
 }
 .pro {
   text-decoration: underline;
-  
 }
 
 .top-cloud {
@@ -138,9 +136,9 @@ text-align: left;
   bottom: 300px;
 }
 .skill-row {
-  width: 50%;
+  width: 80%;
   margin: 50px auto 50px auto;
-  text-align:justify;
+  text-align: justify;
 }
 .img1 {
   width: 25%;
@@ -194,72 +192,72 @@ hr {
   }
 }
 
-.contact{
-   width: 40%;
-   margin: 40px auto 60px;
+.contact {
+  width: 40%;
+  margin: 40px auto 60px;
 }
 
 .btn {
-    background:  #2A2550;
-    background-image: -webkit-linear-gradient(top, #2A2550, #2A2550);
-    background-image: -moz-linear-gradient(top,  #2A2550,  #2A2550);
-    background-image: -ms-linear-gradient(top, #2A2550,  #2A2550);
-    background-image: -o-linear-gradient(top, #2A2550, #2A2550);
-    background-image: linear-gradient(to bottom,  #2A2550,  #2A2550);
-    font-family: "Inter";
-    color: #ffffff;
-    font-size: 30px;
-    padding: 5px 10px;
-    text-decoration: none;
-    margin-inline: 1rem;
-    @include mq.media(phoneLarge) {
-      font-size: 10px;
-    }
-    @include mq.media(phoneMedium) {
-      font-size: 6px;
-    }
-    @include mq.media(phoneSmall) {
-      font-size: 6px;
-    }
+  background: #2a2550;
+  background-image: -webkit-linear-gradient(top, #2a2550, #2a2550);
+  background-image: -moz-linear-gradient(top, #2a2550, #2a2550);
+  background-image: -ms-linear-gradient(top, #2a2550, #2a2550);
+  background-image: -o-linear-gradient(top, #2a2550, #2a2550);
+  background-image: linear-gradient(to bottom, #2a2550, #2a2550);
+  font-family: "Inter";
+  color: #ffffff;
+  font-size: 30px;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-inline: 1rem;
+  @include mq.media(phoneLarge) {
+    font-size: 10px;
   }
-  
-  .btn:hover {
-    background: #30e3cb;
-    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-    text-decoration: none;
+  @include mq.media(phoneMedium) {
+    font-size: 6px;
   }
- 
-.bottom{
-    width: 100%;
-    background-color: #2A2550;
-    padding:50px 0px 20px;
-    margin-top: 3rem;
-    bottom: 0;
-    position: relative;
-}
-a{
-    color: #fff;
-    text-decoration: none;
-}
-a:hover{
-color: #eaf6f6;
+  @include mq.media(phoneSmall) {
+    font-size: 6px;
+  }
 }
 
-.copy{
-    color: #eaf6f6;
-    font-size: 0.75rem;
-    padding: 20px 0px;
-    @include mq.media(phoneLarge) {
-      font-size: 10px;
-    }
-    @include mq.media(phoneMedium) {
-      font-size: 10px;
-    }
-    @include mq.media(phoneSmall) {
-      font-size: 10px;
-    }
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.bottom {
+  width: 100%;
+  background-color: #2a2550;
+  padding: 50px 0px 20px;
+  margin-top: 3rem;
+  bottom: 0;
+  position: relative;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #eaf6f6;
+}
+
+.copy {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0px;
+  @include mq.media(phoneLarge) {
+    font-size: 10px;
+  }
+  @include mq.media(phoneMedium) {
+    font-size: 10px;
+  }
+  @include mq.media(phoneSmall) {
+    font-size: 10px;
+  }
 }
