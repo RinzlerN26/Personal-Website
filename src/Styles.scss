@@ -20,12 +20,21 @@ body {
   margin-bottom:50px;
 }
 
+img{
+  @include mq.media(phoneMedium) {
+    width: 50px;
+    height: 50px;
+  }
+}
 
 .top {
   background-color: #050921;;
   position: relative;
-  padding-top: 100px;
+  padding: 20px 0 20px 0;
   height:auto;
+  @include mq.media(phoneMedium) {
+    font-size: 10px;
+  }
 }
 
 h1 {
@@ -33,6 +42,9 @@ h1 {
   margin: 50px auto 0 auto;
   font-family: "Poppins";
   font-size: 5.625rem;
+  @include mq.media(phoneMedium) {
+    font-size: 10px;
+  }
 }
 h2 {
   color: #ffffff;
@@ -40,10 +52,16 @@ h2 {
   font-size: 2.5rem;
   font-weight: normal;
   padding-bottom: 40px;
+  @include mq.media(phoneMedium) {
+    font-size: 10px;
+  }
 }
 h3 {
   color: #050921;;
   font-family: "Poppins";
+  @include mq.media(phoneMedium) {
+    font-size: 10px;
+  }
 } 
 .project-heading{
 text-align: left;
@@ -69,7 +87,7 @@ text-align: left;
 }
 .skill-row {
   width: 50%;
-  margin: 100px auto 200px auto;
+  margin: 50px auto 50px auto;
   text-align:justify;
 }
 .img1 {
@@ -84,7 +102,7 @@ text-align: left;
 }
 
 .middle {
-  margin: 100px 0px;
+  margin: 10px 0px;
 }
 
 .intro {
@@ -94,6 +112,9 @@ text-align: left;
 
 p {
   line-height: 2;
+  @include mq.media(phoneMedium) {
+    font-size: 10px;
+  }
 }
 
 hr {
@@ -101,13 +122,17 @@ hr {
   border-bottom: none;
   width: 200px;
   margin: 100px auto;
+  @include mq.media(phoneMedium) {
+    border: dotted #eaf6f6 10px;
+    border-bottom: none;
+  }
 }
 
 .contact{
    width: 40%;
    margin: 40px auto 60px;
-
 }
+
 .btn {
     background:  #2A2550;
     background-image: -webkit-linear-gradient(top, #2A2550, #2A2550);
@@ -115,14 +140,14 @@ hr {
     background-image: -ms-linear-gradient(top, #2A2550,  #2A2550);
     background-image: -o-linear-gradient(top, #2A2550, #2A2550);
     background-image: linear-gradient(to bottom,  #2A2550,  #2A2550);
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 50px;
     font-family: "Inter";
     color: #ffffff;
     font-size: 30px;
-    padding: 10px 20px 10px 20px;
+    padding: 5px 10px;
     text-decoration: none;
+    @include mq.media(phoneMedium) {
+      font-size: 10px;
+    }
   }
   
   .btn:hover {
@@ -139,14 +164,13 @@ hr {
     width: 100%;
     background-color: #2A2550;
     padding:50px 0px 20px;
+    margin-top: 3rem;
 }
 a{
     color: #fff;
-    margin:10px 20px;
     text-decoration: none;
 }
 a:hover{
- 
 color: #eaf6f6;
 }
 
