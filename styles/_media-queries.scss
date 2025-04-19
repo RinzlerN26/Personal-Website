@@ -1,0 +1,55 @@
+@mixin media($screen) {
+    @if $screen==largeDesktopAndUp {
+        @media (max-width: 3000px) and (min-width: 2560px) {
+            @content;
+        }
+    }
+
+    @else if $screen==mediumLargeDesktopUp {
+        @media (min-width: 1920px) and (max-width: 2560px) {
+            @content;
+        }
+    }
+
+    @else if $screen==mediumLargeDesktop {
+        @media (min-width: 1600px) and (max-width: 1920px) {
+            @content;
+        }
+    }
+
+    @else if $screen==smallMediumDesktopUp {
+        @media (min-width: 1366px) and (max-width: 1440px) {
+            @content;
+        }
+    }
+
+    @else if $screen==smallMediumDesktop {
+        @media (min-width: 1280px) and (max-width: 1599px) {
+            @content;
+        }
+    }
+
+    @else if $screen==smallDesktopDown {
+        @media (min-width: 1023px) and (max-width: 1279px) {
+            @content;
+        }
+    }
+
+    @else if $screen==phoneMedium {
+        @media (min-width: 376px) and (max-width: 479px) {
+            @content;
+        }
+    }
+
+    @else if $screen==phoneLarge {
+        @media (min-width: 480px) and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $screen==phoneSmall {
+        @media (max-width: 375px) {
+            @content;
+        }
+    }
+}

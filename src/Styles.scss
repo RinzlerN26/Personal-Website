@@ -1,5 +1,7 @@
+@use '../styles/media-queries.scss' as mq;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,300;1,700&display=swap');
+
 
 body {
   color: #40514e;
@@ -11,11 +13,11 @@ body {
 }
 
 .t{
- margin-bottom:500px;
- margin-top:300px;
+ margin-bottom:50px;
+ margin-top:30px;
 }
 .u{
-  margin-bottom:500px;
+  margin-bottom:50px;
 }
 
 
@@ -23,7 +25,7 @@ body {
   background-color: #050921;;
   position: relative;
   padding-top: 100px;
-  height:2200px;
+  height:auto;
 }
 
 h1 {
@@ -37,14 +39,21 @@ h2 {
   font-family: "Poppins";
   font-size: 2.5rem;
   font-weight: normal;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 h3 {
   color: #050921;;
   font-family: "Poppins";
+} 
+.project-heading{
+text-align: left;
+&.full-stack-heading{
+  text-align: right;
+}
 }
 .pro {
   text-decoration: underline;
+  
 }
 
 .top-cloud {
@@ -61,7 +70,7 @@ h3 {
 .skill-row {
   width: 50%;
   margin: 100px auto 200px auto;
-  text-align: left;
+  text-align:justify;
 }
 .img1 {
   width: 25%;
@@ -127,7 +136,7 @@ hr {
   }
  
 .bottom{
-
+    width: 100%;
     background-color: #2A2550;
     padding:50px 0px 20px;
 }
