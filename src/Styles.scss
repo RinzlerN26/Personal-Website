@@ -117,7 +117,7 @@ h3 {
 .project-heading {
   text-align: left;
   &.full-stack-heading {
-    text-align: right;
+    text-align: left;
   }
 }
 .pro {
@@ -142,8 +142,8 @@ h3 {
 }
 .img1 {
   width: 25%;
-  float: left;
-  margin-right: 30px;
+  float: right;
+  margin-left: 30px;
 }
 .img2 {
   width: 25%;
@@ -192,9 +192,10 @@ hr {
   }
 }
 
-.contact {
-  width: 40%;
-  margin: 40px auto 60px;
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .btn {
@@ -210,6 +211,10 @@ hr {
   padding: 5px 10px;
   text-decoration: none;
   margin-inline: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-block: 1rem;
+  width: 35%;
   @include mq.media(phoneLarge) {
     font-size: 10px;
   }
