@@ -1,37 +1,24 @@
-// Smooth scroll behavior
-document.documentElement.style.scrollBehavior = 'smooth';
+// Reveal elements as they scroll into view
+const items = document.querySelectorAll(".reveal");
 
-// Intersection Observer for scroll animations
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
-};
+if (!("IntersectionObserver" in window)) {
+  items.forEach((el) => el.classList.add("in"));
+} else {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("in");
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+  );
 
-const animationObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const animationType = entry.target.dataset.animate;
-
-      if (animationType) {
-        entry.target.classList.add(animationType);
-      }
-
-      // Animate skill badges
-      if (entry.target.classList.contains('skill-badge')) {
-        entry.target.classList.add('visible');
-      }
-
-      animationObserver.unobserve(entry.target);
-    }
+  // small stagger for cards in the same row
+  document.querySelectorAll(".grid .card").forEach((card, i) => {
+    card.style.transitionDelay = `${(i % 2) * 80}ms`;
   });
-}, observerOptions);
 
-// Observe all elements with data-animate attribute
-document.querySelectorAll('[data-animate]').forEach(element => {
-  animationObserver.observe(element);
-});
-
-// Observe all skill badges
-document.querySelectorAll('.skill-badge').forEach(badge => {
-  animationObserver.observe(badge);
-});
+  items.forEach((el) => observer.observe(el));
+}
